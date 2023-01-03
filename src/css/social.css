@@ -1,0 +1,26 @@
+.socialTile {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+i.fa.socialIC {
+    font-size: 30px;
+}
+i.fa.socialIC:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.socialHeahing {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.socialICH {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+}

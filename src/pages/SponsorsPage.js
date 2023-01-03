@@ -5,6 +5,7 @@ import mahindra from '../assets/sponsors/mahindra.png';
 import byjus from '../assets/sponsors/byjus.png';
 import SponsorTile from '../components/sponsorTile';
 import Page from "../components/page";
+import SocialTile from '../components/SocialTile';
 
 export default function Sponsors() {
 
@@ -15,6 +16,7 @@ export default function Sponsors() {
             <br />
             <SponsorTile sponsorOneName={'Oracle, Title Sponsor'} sponsorOneImage={oracle} sponsorTwoName={'Infosys'} sponsorTwoImage={infosys} />
             <SponsorTile sponsorOneName={'Byjus'} sponsorOneImage={byjus} sponsorTwoName={'Tech Mahindra'} sponsorTwoImage={mahindra} />
+            <SocialTile />
         </Page>
     )
 }

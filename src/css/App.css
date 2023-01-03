@@ -3,8 +3,9 @@
 :root {
     --color--text: rgb(195 195 195);
     --active--color: #dddddd;
-    --blur: blur(30px) brightness(0.9);
+    --blur: blur(35px) brightness(0.875);
     --transition: 400ms;
+    --transition--slow: 600ms;
 }
 
 ::-webkit-scrollbar {
@@ -139,6 +140,7 @@ button.registerButton {
     border-radius: 15px 0;
     font-size: 17px;
     transition: var(--transition);
+    color: var(--color--text);
 }
 button.registerButton:hover {
     background: rgb(255 255 255 / 15%);
@@ -159,6 +161,11 @@ button.registerButton:hover {
 
 .anim3 {
     opacity: 0;
+    transform: scale(0.1);
+    transition: var(--transition);
+}
+
+.anim4 {
     transform: scale(0.1);
     transition: var(--transition);
 }

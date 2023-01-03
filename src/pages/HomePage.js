@@ -3,6 +3,8 @@ import { isMobile, pageClass, pageStyleActivity } from '../services';
 import Page from "../components/page";
 import { useEffect, useLayoutEffect, useState } from 'react';
 import $ from 'jquery';
+import SocialTile from '../components/SocialTile';
+import { Link } from 'react-router-dom';
 
 export default function HomePage() {
 
@@ -23,15 +25,15 @@ export default function HomePage() {
         return () => window.removeEventListener('resize', updateSize);
     }, []);
 
-    useEffect(function(){
-        setTimeout(function(){
-            $(".anim3").css({transform: 'scale(1)', opacity: 1});
-        },1);
-    },[])
+    useEffect(function () {
+        setTimeout(function () {
+            $(".anim3").css({ transform: 'scale(1)', opacity: 1 });
+        }, 1);
+    }, [])
 
     function pageStyleHome() {
-        return (isMobile())? {
-            height: state.height - (state.height * 60/100)
+        return (isMobile()) ? {
+            height: state.height - (state.height * 60 / 100)
         } : {
             height: state.height - 74
         }
@@ -44,7 +46,9 @@ export default function HomePage() {
                 <div className='center'>
                     <div className='c'>
                         <h2 className='registerHeading'>Register Now!</h2>
-                        <button className='registerButton'>Get Tickets</button>
+                        <Link to='/register'>
+                            <button className='registerButton'>Get Tickets</button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -58,6 +62,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
+            <SocialTile />
         </Page>
     );
 }

@@ -29,6 +29,9 @@ export default function NavBar(props) {
                     <Link to='/sponsors'>
                         <span className={(props.active === 'sponsors')? 'nav-link active' : 'nav-link'}>Sponsors</span>
                     </Link>
+                    <Link to='/register'>
+                        <span className={(props.active === 'register')? 'nav-link active' : 'nav-link'}>Register</span>
+                    </Link>
                 </div>
             </div>
         </div>
